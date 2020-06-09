@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription fmiVersion="2.0" modelName="FmiUdpAdapter" guid="530568da-5532-4eac-aab6-f96f482c4e74">
+    <CoSimulation modelIdentifier="FmiUdpAdapter" canHandleVariableCommunicationStepSize="true" />
+    <DefaultExperiment />
+
+    <ModelVariables>
+        <ScalarVariable name="Real_Input" valueReference="0" description="Real Input" causality="input">
+            <Real start="0.0" />
+        </ScalarVariable>
+        <ScalarVariable name="Integer_Input" valueReference="1" description="Integer Input" causality="input">
+            <Integer start="0" />
+        </ScalarVariable>
+        <ScalarVariable name="Boolean_Input" valueReference="2" description="Boolean Input" causality="input">
+            <Boolean start="false" />
+        </ScalarVariable>
+        <ScalarVariable name="String_Input" valueReference="3" description="String_Input" causality="input">
+            <String start=""/>
+        </ScalarVariable>
+
+        <ScalarVariable name="Real_Output" valueReference="4" description="Real output" causality="output">
+            <Real />
+        </ScalarVariable>
+        <ScalarVariable name="Integer_Output" valueReference="5" description="Integer output" causality="output">
+            <Integer />
+        </ScalarVariable>
+        <ScalarVariable name="Boolean_Output" valueReference="6" description="Boolean output" causality="output">
+            <Boolean />
+        </ScalarVariable>
+        <ScalarVariable name="String_Output" valueReference="7" description="String output" causality="output">
+            <String />
+        </ScalarVariable>
+
+    </ModelVariables>
+
+    <ModelStructure />
+
+</fmiModelDescription>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ssd:SystemStructureDescription name="FmiUdpAdapterDemo" version="v2019-02-19">
+    <ssd:DefaultExperiment startTime="0.0" stopTime="2e-4" />
+    <ssd:System name="FmiUdpAdapterDemo" description="FMI UDP Adapter demo">
+        <ssd:SimulationInformation>
+            <ssd:FixedStepMaster description="FixedStepAlgorithm" stepSize="0.5" />
+        </ssd:SimulationInformation>
+        <ssd:Elements>
+            <ssd:Component name="CoupledClutches" source="CoupledClutches.fmu" />
+            <ssd:Component name="FmiUdpAdapter" source="FmiUdpAdapter.fmu" />
+        </ssd:Elements>
+        <ssd:Connections>
+            <ssd:Connection startElement="CoupledClutches" startConnector="outputs[1]" endElement="FmiUdpAdapter" endConnector="input1" />
+            <ssd:Connection startElement="CoupledClutches" startConnector="outputs[4]" endElement="FmiUdpAdapter" endConnector="input2" />
+            <ssd:Connection startElement="FmiUdpAdapter" startConnector="output1" endElement="CoupledClutches" endConnector="inputs" />
+        </ssd:Connections>
+    </ssd:System>
+</ssd:SystemStructureDescription>

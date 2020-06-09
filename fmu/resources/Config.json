@@ -1,0 +1,6 @@
+{
+    "receiveAddress": "127.0.0.1",
+    "receivePort": 49152,
+    "transmitAddress": "127.0.0.1",
+    "transmitPort": 49153
+}
